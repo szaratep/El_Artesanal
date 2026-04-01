@@ -25,6 +25,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: "Manuale", serif;
     background-color: var(--bg);
 }
@@ -83,4 +86,87 @@ body {
 
 .img_user {
     width: 100%;
+}
+
+footer{
+    margin-top: auto;
+    background-color: var(--primary-dark);
+    padding: 3.2rem;
+}
+
+.footer{
+    margin: auto;
+    width: 97%;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.5rem;
+    color: var(--on-primary);
+}
+
+.title_footer{
+    margin-bottom: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.p_footer{
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.img_footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.list_item_footer_img{
+    display: flex;
+    width: 3rem; 
+    list-style: none;
+}
+
+.list_item_footer{
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.link_item_footer{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--on-primary);
+    text-decoration: none;
+}
+
+.contact_img_footer{
+    width: 100%;
+}
+
+.img_contact{
+    margin-left: 3rem;
+}
+
+.phone_number_footer{
+    color: var(--on-primary);
+    font-size: 2rem;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid var(--on-primary);
+}
+
+
+.footer_bottom > p{
+    color: var(--on-primary);
+    font-size: 1.5rem;
 }
