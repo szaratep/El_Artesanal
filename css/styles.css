@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #651600; /* títulos, botón principal */
+    --primary-dark: #87290d; /* navbar */
+    --on-primary: #ffffff; /* texto sobre botón */
+
+    --secondary: #79573f; /* botón secundario, acentos */
+
+    --bg: #fff2d9; /* fondo de la página */
+    --surface: #ffffff; /* tarjetas y contenedores */
+
+    --text: #211b0b; /* texto principal */
+    --text-muted: #57423c; /* texto secundario / párrafos */
+
+    --border: #dec0b8;/* bordes sutiles */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Manuale", serif;
+    background-color: var(--bg);
+}
+
+.header {
+    display: flex;
+    padding: 1.6rem 3.2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-dark);
+}
+
+.logo {
+    width: 12rem;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+.list_menu {
+    display: flex;
+    gap: 40px;
+}
+
+.list_item {
+    list-style: none;
+}
+
+.link_item {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--on-primary);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.icon_car {
+    width: 3rem;
+    padding: 2px;
+}
+
+.icon_user {
+    width: 3rem;
+    padding: 2px;
+}
+
+.img_car {
+    width: 100%;
+}
+
+.img_user {
+    width: 100%;
+}
