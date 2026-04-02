@@ -64,6 +64,41 @@ body {
     color: var(--on-primary);
 }
 
+.button_pry {
+    background-color: var(--primary);
+    border-radius: 1rem;
+    text-transform: capitalize;
+    border: none;
+    font-family: "Manuale", serif;
+    font-size: 2rem;
+    color: var(--on-primary);
+    padding: 1.6rem 3.2rem;
+    margin: 10px;
+    transition: .4s;
+} 
+
+.button_pry:hover{
+    transition: .4s;
+    background: #87290d;
+    transform: translateY(-4px);
+}
+
+.button_sec{
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 2px solid rgb(222 192 184 / 0.2);
+    font-family: "Manuale", serif;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    margin: 10px;
+    transition: .4s;
+}
+
+.button_sec:hover{
+    transition: .4s;
+    background: #eee1c8;
+}
+
 .icons {
     display: flex;
     align-items: center;
