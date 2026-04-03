@@ -1,5 +1,6 @@
 @import 'styles.css';
 
+
 .intro{
     display: flex;
     justify-content: space-around;
@@ -44,3 +45,49 @@
     transition: .6s;
     rotate: 0deg;
 }
+
+.container{
+    width: 100%;
+    height: 800px;
+    background-color: var(--surface);
+    padding: 9.6rem 3.2rem;
+}
+
+.header_featured_products{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.title_head_featured{
+    flex-direction: column;
+    font-size: 4.8rem;
+    color: var(--text-muted);
+}
+
+.line_title{
+    width: 100px;
+    height: 5px;
+    background-color: var(--border);
+}
+
+.see_all{
+    font-size: 1.6rem;
+    font-family: var(--secondary-Font);
+    text-decoration: none;
+    color: var(--text);
+}
+
+.see_all:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.featured_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px;
+}
+
