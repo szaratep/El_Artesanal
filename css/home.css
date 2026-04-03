@@ -19,9 +19,9 @@
 .pharagrap_brand{
     width: 100%;
     font-size: 1.5rem;
-    font-family: "Manuale", serif;
     padding: 5px;
     margin-bottom: 20px;
+    font-family: var(--secondary-Font);
 }
 
 .img_container_first_content{

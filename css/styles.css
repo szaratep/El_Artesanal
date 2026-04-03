@@ -18,6 +18,9 @@
     --text-muted: #57423c; /* texto secundario / párrafos */
 
     --border: #dec0b8;/* bordes sutiles */
+
+    --primary-Font: "Manuale", serif;
+    --secondary-Font: "Manrope", sans-serif;
 }
 
 html {
@@ -28,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: "Manuale", serif;
+    font-family: var(--primary-Font);
     background-color: var(--bg);
 }
 
@@ -66,12 +69,12 @@ body {
 
 .button_pry {
     background-color: var(--primary);
-    border-radius: 1rem;
-    text-transform: capitalize;
-    border: none;
-    font-family: "Manuale", serif;
-    font-size: 2rem;
     color: var(--on-primary);
+    border-radius: 1rem;
+    border: none;
+    font-family: var(--primary-Font);
+    font-size: 2rem;
+    text-transform: capitalize;
     padding: 1.6rem 3.2rem;
     margin: 10px;
     transition: .4s;
@@ -87,7 +90,7 @@ body {
     background-color: transparent;
     border-radius: 1rem;
     border: 2px solid rgb(222 192 184 / 0.2);
-    font-family: "Manuale", serif;
+    font-family: var(--secondary-Font);
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
     margin: 10px;
@@ -98,6 +101,81 @@ body {
     transition: .4s;
     background: #eee1c8;
 }
+
+.card {
+  width: 400px;
+  height: auto;
+  background-color: var(--surface);
+  transition: box-shadow .3s; 
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+.img_container {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img_card {
+  width: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+
+.card:hover .img_card {
+  transform: scale(1.2);
+}
+
+.content_card{
+    padding: 10px;
+}
+
+.text{
+    margin-bottom: 5px;
+}
+
+.type_product{
+    font-size: 1.2rem;
+}
+
+.title_product{
+    font-size: 2.4rem;
+}
+
+.description{
+    font-size: 1.6rem;
+}
+
+.price_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    font-family: var(--secondary-Font);
+}
+
+.price{
+    font-size: 2.4rem;
+}
+
+.button_ter{
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    font-family: var(--secondary-Font);
+    font-size: 1.6rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.button_ter:hover{
+    transition: .2s;
+    background: #87290d;
+}
+
 
 .icons {
     display: flex;
