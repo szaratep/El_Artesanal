@@ -1,0 +1,317 @@
+@import 'styles.css';
+
+/* ── Shared layout ── */
+.page-hero {
+    background-color: var(--primary-dark);
+    padding: 4.8rem 3.2rem;
+    text-align: center;
+}
+
+.page-hero__title {
+    font-family: var(--primary-Font);
+    font-size: 5rem;
+    color: var(--on-primary);
+    margin-bottom: 0.8rem;
+}
+
+.page-hero__subtitle {
+    font-family: var(--secondary-Font);
+    font-size: 1.6rem;
+    color: var(--border);
+    letter-spacing: 1px;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 6.4rem auto;
+    padding: 0 3.2rem;
+    font-family: var(--secondary-Font);
+}
+
+/* ── Section block ── */
+.doc-section {
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 3.2rem 4rem;
+    margin-bottom: 2.4rem;
+    border-left: 4px solid var(--primary);
+}
+
+.doc-section__title {
+    font-family: var(--primary-Font);
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.doc-section__text {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.doc-section__text:last-child {
+    margin-bottom: 0;
+}
+
+.doc-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.doc-list__item {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    padding: 0.6rem 0 0.6rem 2rem;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+}
+
+.doc-list__item:last-child {
+    border-bottom: none;
+}
+
+.doc-list__item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.doc-highlight {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 2rem 2.4rem;
+    margin-top: 1.6rem;
+}
+
+.doc-highlight__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+}
+
+.doc-highlight__value {
+    font-size: 1.6rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.doc-intro {
+    font-family: var(--secondary-Font);
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2.4rem 3.2rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.8;
+    border: 1px solid var(--border);
+}
+
+/* ── Contact banner ── */
+.contact-banner {
+    background-color: var(--primary);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.contact-banner__title {
+    font-family: var(--primary-Font);
+    font-size: 2.4rem;
+    color: var(--on-primary);
+    margin-bottom: 0.8rem;
+}
+
+.contact-banner__text {
+    font-size: 1.5rem;
+    color: var(--border);
+    margin-bottom: 2rem;
+}
+
+.contact-banner__link {
+    color: var(--on-primary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 2px;
+    transition: .3s;
+}
+
+.contact-banner__link:hover {
+    border-color: var(--on-primary);
+}
+
+/* ── FAQ specific ── */
+.faq-item {
+    background-color: var(--surface);
+    border-radius: 1rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: box-shadow .3s;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 16px rgba(101, 22, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.8rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question__text {
+    font-family: var(--primary-Font);
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.faq-question__icon {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: bold;
+    transition: transform .3s;
+    flex-shrink: 0;
+    margin-left: 1.6rem;
+}
+
+details[open] .faq-question__icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    font-family: var(--secondary-Font);
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    padding: 0 2.8rem 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.6rem;
+}
+
+.faq-category-title {
+    font-family: var(--primary-Font);
+    font-size: 2.4rem;
+    color: var(--secondary);
+    margin: 4rem 0 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border);
+}
+
+/* ── Shipping specific ── */
+.shipping-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.shipping-card {
+    background-color: var(--bg);
+    border-radius: 1rem;
+    padding: 2.4rem;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.shipping-card__icon {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.shipping-card__title {
+    font-family: var(--primary-Font);
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.shipping-card__text {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 3rem;
+    margin-top: 1.6rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.8rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.2rem;
+    top: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.timeline-item__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+}
+
+.timeline-item__text {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* ── Payment methods grid ── */
+.payment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 1.6rem;
+}
+
+.payment-tag {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
