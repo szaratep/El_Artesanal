@@ -138,6 +138,7 @@ body {
 }
 
 .type_product{
+    font-family: var(--secondary-Font);
     font-size: 1.2rem;
 }
 
@@ -146,6 +147,7 @@ body {
 }
 
 .description{
+    font-family: var(--secondary-Font);
     font-size: 1.6rem;
 }
 
