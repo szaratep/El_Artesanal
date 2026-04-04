@@ -17,7 +17,7 @@
     --text: #211b0b; /* texto principal */
     --text-muted: #57423c; /* texto secundario / párrafos */
 
-    --border: #dec0b8;/* bordes sutiles */
+    --border: #e9dedb;/* bordes sutiles */
 
     --primary-Font: "Manuale", serif;
     --secondary-Font: "Manrope", sans-serif;
@@ -104,7 +104,7 @@ body {
 
 .card {
   width: 400px;
-  height: auto;
+  height: 498px;
   background-color: var(--surface);
   transition: box-shadow .3s; 
 }
