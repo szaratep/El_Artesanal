@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/customized.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,7 +35,141 @@
     </header>
 
     <main>
+        <section class="intro">
+            <div class="text_intro">
+                <h2 class="title_intro">Proyectos a <br><span>tu medida</span></h2>
+                <p class="description_intro">
+                    Elevamos tus ideas del papel a la realidad física con la precisión milimétrica del láser. Desde
+                    mobiliario de autor hasta detalles corporativos, cada pieza es tratada como una obra de arte única.
+                </p>
+                <button class="button_pry start_proyect">Iniciar Proyecto</button>
+            </div>
+            <div class="image_intro">
+                <img class="image" src="./../img/971.jpg" alt="">
+                <div class="slogan">
+                    <p class="text_slogan">"La precisión es el lenguaje del alma artesana."</p>
+                    <div class="line_intro"></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="second_part">
+            <div class="title">
+                <h2 class="title_second">El camino de la Creacion</h2>
+                <div class="line_second"></div>
+            </div>
+
+            <div class="container_icons">
+                <div class="icon">
+                    <div class="img_icon">
+                        <img class="img" src="./../img/lightbulb_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="title_icon">La idea</h3>
+                    <p class="description_icon">Compartes tu visión, bocetos o archivos digitales con nuestro equipo de
+                        diseño.</p>
+                </div>
+
+                <div class="icon">
+                    <div class="img_icon">
+                        <img class="img" src="./../img/texture_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="title_icon">Materiales</h3>
+                    <p class="description_icon">Seleccionamos maderas nobles, acrílicos premium o metales según la
+                        necesidad estética.</p>
+                </div>
+
+                <div class="icon">
+                    <div class="img_icon">
+                        <img class="img" src="./../img/extension_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="title_icon">Prototipo</h3>
+                    <p class="description_icon">Creamos una muestra digital o física para asegurar que cada ángulo sea
+                        perfecto.</p>
+                </div>
+
+                <div class="icon">
+                    <div class="img_icon">
+                        <img class="img"
+                            src="./../img/precision_manufacturing_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="title_icon">Realidad</h3>
+                    <p class="description_icon">Ejecutamos el grabado y corte final con acabados manuales de alta gama.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="galery">
+            <h2 class="title_galery">Galería de Trabajos Especiales</h2>
+
+            <div class="container_galery">
+                <div class="container_sec_galery">
+                    <div class="image_sec_galery">
+                        <img class="img_sec" src="./../img/971.jpg" alt="">
+                    </div>
+
+                    <div class="image_sec_galery">
+                        <img class="img_sec" src="./../img/971.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="image_pry_galery">
+                    <img class="img_pry" src="./../img/971.jpg" alt="">
+                </div>
+
+                <div class="container_sec_galery">
+                    <div class="image_sec_galery">
+                        <img class="img_sec" src="./../img/971.jpg" alt="">
+                    </div>
+
+                    <div class="image_sec_galery">
+                        <img class="img_sec" src="./../img/971.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_info_galery">
+                <div>
+                    <h3 class="title_info">¿Buscas algo diferente?</h3>
+                    <p class="description_info">Trabajamos sobre materiales experimentales y combinamos técnicas
+                        tradicionales con tecnología de punta.</p>
+                </div>
+                <div class="image_info">
+                    <img class="img_info" src="./../img/971.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <p class="application_text">solicitud de cotizacion</p>
+            <h2 class="title_form">Cuentanos tu Visión</h2>
+            <form action="">
+                <label for="name">Nombre Completo</label>
+                <input type="text" name="Name" id="name">
+                <label for="phone_number">Numero Teledonico</label>
+                <input type="text" name="PhoneNumber" id="phone_number">
+
+                <label for="">Material de interés</label>
+                <div class="container_material">
+                    <button class="btn_material active">Madera</button>
+                    <button class="btn_material">Acrílico</button>
+                    <button class="btn_material">Pino</button>
+                    <button class="btn_material">Laminado</button>
+                    <button class="btn_material">Otro</button>
+                </div>
+
+                <label for="description">Descripción del proyecto</label>
+                <textarea name="Description" id="description"></textarea>
+
+                <div class="dropzone">
+                    <input class="dropzone_input" type="file" accept="image/*" id="fileInput">
+                    <p class="dropzone_title">Haz clic o arrastra una imagen aquí</p>
+                    <p class="dropzone_hint">PNG, JPG, WEBP — máx. 5MB</p>
+                </div>
+            
+                <button class="btn_send button_pry">Enviar consulta</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -46,10 +181,13 @@
                 </div>
                 <div class="regulation">
                     <ul class="list_regulation">
-                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Politicas y privacidad</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y condiciones</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Politicas y
+                                privacidad</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y
+                                condiciones</a></li>
                         <li class="list_item_footer"><a class="link_item_footer" href="./shipping.html">Envíos</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas frecuentes</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas
+                                frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="contact">
