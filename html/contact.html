@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap"
         rel="stylesheet">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -29,8 +33,97 @@
             </div>
         </div>
     </header>
-    
+
     <main>
+        <h2 class="title_primary">Hablemos de tu <br><span class="second_line">Próxima Creación</span></h2>
+
+        <section class="container_info">
+            <div class="info_section">
+                <div class="address_section">
+                    <div class="container_icon">
+                        <img class="img_icon" src="./../img/map_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="subtitle_sections">Tienda Fisica y Taller</h3>
+                    <p class="address">
+                        Cra 10# 13 - 07 sur
+                        Punto de referencia: Carpa roja con logo el artesanal
+                        Bogotá, Colombia
+                    </p>
+                </div>
+
+                <div class="phone_number_section">
+                    <div class="container_icon">
+                        <img class="img_icon" src="./../img/phone_in_talk_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg"
+                            alt="">
+                    </div>
+                    <h3 class="subtitle_sections">Telefono</h3>
+                    <p class="address">
+                        +57 301 4139841
+                    </p>
+                </div>
+
+                <div class="email_section">
+                    <div class="container_icon">
+                        <img class="img_icon"
+                            src="./../img/mark_email_unread_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="title_ubication">Email / Correo</h3>
+                    <p class="address">
+                        elartesanalbogota@gmail.com
+                    </p>
+                </div>
+
+                <div class="schedule_section">
+                    <div class="container_icon">
+                        <img class="img_icon" src="./../img/schedule_50dp_651600_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <h3 class="subtitle_sections">Horarios de atencion</h3>
+                    <p class="address">
+                        Lunes a Viernes: 08:30 a.m. - 05:00 p.m.
+                        Sabados: 08:30 a.m. - 02:00 p.m.
+                        Domingos y Festivos: Cerrado
+                    </p>
+                </div>
+
+                <div class="slogan">
+                    <div class="line"></div>
+                    <p>"Cada trazon de luz es una promesa de precisión, cada material una historia esperando a ser
+                        grabada."</p>
+                </div>
+            </div>
+
+            <div class="container_form">
+                <form action="">
+                    <label class="label_form" for="name">Nombre</label>
+                    <input class="input" type="text" placeholder="Tu nombre completo" id="name" name="Name">
+
+                    <label class="label_form" for="phone_number">Numero de Telefono</label>
+                    <input class="input" type="number" name="PhoneNumber" id="phone_number" maxlength="10"
+                        placeholder="+57 301.......5">
+
+                    <label class="label_form" for="affair">Asunto</label>
+                    <input class="input" type="text" name="Affair" id="affair" placeholder="¿En que podemos ayudarte">
+
+                    <label class="label_form" for="message">Mensaje</label>
+                    <textarea class="text_area" name="Message" id="message"
+                        placeholder="cuentanos tu proyecto o consulta"></textarea>
+
+                    <button class="button_pry btn_send">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="maps">
+            <div class="container_maps">
+                <iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0730263403966!2d-74.09359782432372!3d4.580909142682967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f991aaf2b6f89%3A0xe286d2de1eef529b!2sEL%20ARTESANAL%20SAS!5e0!3m2!1ses-419!2sco!4v1775443972952!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info_maps">
+                    <h3 class="title_maps">Visitanos</h3>
+                    <p class="description_maps">
+                        Ven a conocer nuestras máquinas láser de última generación y explora nuestro catálogo de materiales físicos.
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -43,38 +136,46 @@
                 </div>
                 <div class="regulation">
                     <ul class="list_regulation">
-                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Politicas y privacidad</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y condiciones</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Politicas y
+                                privacidad</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y
+                                condiciones</a></li>
                         <li class="list_item_footer"><a class="link_item_footer" href="./shipping.html">Envíos</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas frecuentes</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas
+                                frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="contact">
                     <ul class="img_footer">
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0" class="link_item_footer_img">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-whatsapp.svg" alt="WhatsApp" class="contact_img_footer">
                             </a>
                         </li>
 
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-facebook.svg" alt="Facebook" class="contact_img_footer">
                             </a>
                         </li>
 
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-instagram.svg" alt="" class="contact_img_footer">
                             </a>
                         </li>
 
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-tiktok.svg" alt="" class="contact_img_footer">
                             </a>
                         </li>
-                        
+
                         <li class="list_item_footer_img">
                             <img src="./../img/phone-call.svg" alt="" class="contact_img_footer img_contact">
                         </li>
@@ -89,4 +190,5 @@
         </div>
     </footer>
 </body>
+
 </html>
