@@ -1,0 +1,46 @@
+@import 'styles.css';
+
+.row_two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.field_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.label_inp {
+    color: var(--primary);
+    font-size: 2rem;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* ── Link dentro del checkbox de términos ── */
+.link_terms {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.link_terms:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.button_create{
+    margin: 0;
+    width: 100%;
+}
+
+.button_create > a{
+    font-family: var(--secondary-Font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}

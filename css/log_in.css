@@ -130,6 +130,9 @@ main{
 .button_start{
     margin: 0;
     width: 100%;
+}
+
+.button_start > a{
     font-family: var(--secondary-Font);
     text-transform: uppercase;
     letter-spacing: 1px;
