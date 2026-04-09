@@ -173,15 +173,19 @@
 }
 
 .continue_estimated{
-    font-size: 1.6rem;
     border-radius: 0.3rem;
     padding: 12px 24px;
     margin: 0;
     background-color: var(--secondary);
-    color: var(--surface);
     border: none;
-    font-weight: bold;
     transition: .4s;
+}
+
+.continue_estimated > a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--surface);
+    font-weight: bold;
 }
 
 .continue_estimated:hover{

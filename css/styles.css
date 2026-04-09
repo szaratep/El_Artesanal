@@ -69,16 +69,20 @@ body {
 
 .button_pry {
     background-color: var(--primary);
-    color: var(--on-primary);
     border-radius: 1rem;
     border: none;
-    font-family: var(--primary-Font);
-    font-size: 2rem;
-    text-transform: capitalize;
     padding: 1.6rem 3.2rem;
     margin: 10px;
     transition: .4s;
 } 
+
+.button_pry > a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: var(--primary-Font);
+    color: var(--on-primary);
+}
 
 .button_pry:hover{
     transition: .4s;
@@ -90,11 +94,16 @@ body {
     background-color: transparent;
     border-radius: 1rem;
     border: 2px solid rgb(222 192 184 / 0.2);
-    font-family: var(--secondary-Font);
-    font-size: 2rem;
     padding: 1.6rem 3.2rem;
     margin: 10px;
     transition: .4s;
+}
+
+.button_sec > a{
+    text-decoration: none;
+    font-family: var(--secondary-Font);
+    font-size: 2rem;
+    color: var(--secondary);
 }
 
 .button_sec:hover{
@@ -106,6 +115,8 @@ body {
   width: 400px;
   height: 498px;
   background-color: var(--surface);
+  text-decoration: none;
+  color: var(--text);
   transition: box-shadow .3s; 
 }
 

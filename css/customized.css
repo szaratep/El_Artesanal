@@ -31,11 +31,14 @@
 }
 
 .start_proyect{
+    margin: 0;
+}
+
+.start_proyect > a{
     font-family: var(--secondary-Font);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    margin: 0;
 }
 
 .image_intro{
@@ -369,9 +372,12 @@ form textarea {
 .btn_send {
     width: 100%;
     margin: 20px auto;
+    cursor: pointer;
+}
+
+.btn_send > a{
     font-family: var(--secondary-Font);
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    cursor: pointer;
 }
