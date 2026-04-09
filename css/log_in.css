@@ -1,0 +1,159 @@
+@import 'styles.css';
+
+main{
+    margin: 96px 32px;
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container_image{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_log_in{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info_img{
+    width: 100%;
+    height: 100%;
+    color: var(--on-primary);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: 4.8rem;
+}
+
+.title_img{
+    font-size: 5rem;
+    color: var(--on-primary);
+}
+
+.slogan_img{
+    font-family: var(--secondary-Font);
+    font-size: 1.6rem;
+}
+
+.container_info{
+    width: 50%;
+    padding: 6.4rem;
+    background-color: var(--surface);
+}
+
+.welcome{
+    color: var(--primary);
+    font-size: 4.6rem;
+}
+
+.welcome_indications{
+    color: var(--secondary);
+    font-family: var(--secondary-Font);
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.form > label, .cont_password > label{
+    color: var(--primary);
+    font-size: 2rem;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.form > label, input{
+    display: block;
+}
+
+.intp{
+    width: 100%;
+    height: 48px;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: var(--bg);
+}
+
+.intp::placeholder{
+    color: var(--secondary);
+    font-family: var(--secondary-Font);
+}
+
+.cont_password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lost_pas{
+    font-size: 1.2rem;
+    font-family: var(--secondary-Font);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.stay_logged_container{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.stay_logged_check{
+    display: inline;
+    width: 16px;
+    height: 16px;
+}
+
+.stay_logged{
+    font-size: 1.2rem;
+    font-family: var(--secondary-Font);
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: var(--secondary);
+}
+
+.button_start{
+    margin: 0;
+    width: 100%;
+    font-family: var(--secondary-Font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.register_container{
+    margin-top: 48px;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.question{
+    font-size: 1.7rem;
+    color: var(--secondary);
+    font-family: var(--secondary-Font);
+    margin-bottom: 10px;
+}
+
+.create_acount{
+    font-size: 1.7rem;
+    color: var(--primary);
+    font-family: var(--secondary-Font);
+    text-underline-offset: 10px;
+}
+
+
