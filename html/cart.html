@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap" rel="stylesheet">
+    <title>Tu Carrito — El Artesanal</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png" alt="Logo el artesanal"></a></div>
+            <nav>
+                <ul class="list_menu">
+                    <li class="list_item"><a href="./index.html" class="link_item">Inicio</a></li>
+                    <li class="list_item"><a href="./products.html" class="link_item">Productos</a></li>
+                    <li class="list_item"><a href="./customized.html" class="link_item">Personalizados</a></li>
+                    <li class="list_item"><a href="./contact.html" class="link_item">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg" alt="Carrito de compras"></a></div>
+                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg" alt="Usuario"></a></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-main">
+
+        <div class="cart-title-block">
+            <h1 class="cart-title">Tu Carrito</h1>
+            <div class="cart-title-line"></div>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- Lista de productos -->
+            <section class="cart-items">
+
+                <div class="cart-item">
+                    <div class="cart-item__img-wrap">
+                        <img class="cart-item__img" src="./../img/971.jpg" alt="Reloj Topográfico Oak">
+                    </div>
+                    <div class="cart-item__body">
+                        <div class="cart-item__top">
+                            <div>
+                                <p class="cart-item__category">Hogar & Decoración</p>
+                                <h3 class="cart-item__name">Reloj Topográfico Oak</h3>
+                                <p class="cart-item__desc">Reloj de pared en roble macizo con grabado láser de curvas de nivel precisas</p>
+                            </div>
+                            <button class="cart-item__delete" type="button" aria-label="Eliminar">✕</button>
+                        </div>
+                        <div class="cart-item__bottom">
+                            <div class="qty-control">
+                                <button class="qty-btn" type="button">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" type="button">+</button>
+                            </div>
+                            <span class="cart-item__price">$85.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item__img-wrap">
+                        <img class="cart-item__img" src="./../img/971.jpg" alt="Set de Posavasos Geométricos">
+                    </div>
+                    <div class="cart-item__body">
+                        <div class="cart-item__top">
+                            <div>
+                                <p class="cart-item__category">Hogar & Decoración</p>
+                                <h3 class="cart-item__name">Set de Posavasos Geométricos</h3>
+                                <p class="cart-item__desc">Acrílico ahumado con corte de precisión láser y acabado pulido mate</p>
+                            </div>
+                            <button class="cart-item__delete" type="button" aria-label="Eliminar">✕</button>
+                        </div>
+                        <div class="cart-item__bottom">
+                            <div class="qty-control">
+                                <button class="qty-btn" type="button">−</button>
+                                <span class="qty-value">2</span>
+                                <button class="qty-btn" type="button">+</button>
+                            </div>
+                            <span class="cart-item__price">$42.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="cart-back" href="./products.html">← Seguir comprando</a>
+
+            </section>
+
+            <!-- Resumen -->
+            <aside class="cart-summary">
+
+                <div class="summary-box">
+                    <h2 class="summary-box__title">Resumen del Pedido</h2>
+
+                    <div class="summary-row">
+                        <span class="summary-row__label">Subtotal</span>
+                        <span class="summary-row__value">$127.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-row__label">Envío</span>
+                        <span class="summary-row__value summary-row__value--muted">Calculado en el checkout</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span class="summary-total__label">Total</span>
+                        <span class="summary-total__value">$127.00</span>
+                    </div>
+
+                    <button class="button_pry btn-checkout" type="button">
+                        <a href="#">Finalizar Compra</a>
+                    </button>
+
+                    <div class="summary-badges">
+                        <p class="summary-badge">✅ Garantía de precisión digital</p>
+                        <p class="summary-badge">📦 Envíos asegurados a todo Colombia</p>
+                    </div>
+                </div>
+
+                <div class="payment-note">
+                    <span class="payment-note__icons">💳 🔒</span>
+                    <p class="payment-note__text">Pagos seguros & encriptados</p>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_top">
+                <div class="brand">
+                    <h2 class="title_footer">El Artesanal S.A.S.</h2>
+                    <p class="p_footer">Artesanía digital para marcas y <br>personas con propósito.</p>
+                </div>
+                <div class="regulation">
+                    <ul class="list_regulation">
+                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Políticas y privacidad</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y condiciones</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./shipping.html">Envíos</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul class="img_footer">
+                        <li class="list_item_footer_img">
+                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B573014139841" class="link_item_footer_img">
+                                <img src="./../img/brand-whatsapp.svg" alt="WhatsApp" class="contact_img_footer">
+                            </a>
+                        </li>
+                        <li class="list_item_footer_img">
+                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/" class="link_item_footer_img">
+                                <img src="./../img/brand-facebook.svg" alt="Facebook" class="contact_img_footer">
+                            </a>
+                        </li>
+                        <li class="list_item_footer_img">
+                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/" class="link_item_footer_img">
+                                <img src="./../img/brand-instagram.svg" alt="Instagram" class="contact_img_footer">
+                            </a>
+                        </li>
+                        <li class="list_item_footer_img">
+                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte" class="link_item_footer_img">
+                                <img src="./../img/brand-tiktok.svg" alt="TikTok" class="contact_img_footer">
+                            </a>
+                        </li>
+                        <li class="list_item_footer_img">
+                            <img src="./../img/phone-call.svg" alt="" class="contact_img_footer img_contact">
+                        </li>
+                        <p class="phone_number_footer">: 301 4139841</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© 2026 El Artesanal S.A.S. — Todos los derechos reservados.</p>
+                <p>Desarrollado por Sebastián Zárate</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+@import 'styles.css';
+
+/* ── Main ── */
+.cart-main {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6.4rem 0 9.6rem;
+}
+
+/* ── Título ── */
+.cart-title-block {
+    margin-bottom: 5.6rem;
+}
+
+.cart-title {
+    font-family: var(--primary-Font);
+    font-size: 7rem;
+    color: var(--primary);
+    font-style: italic;
+    line-height: 1;
+}
+
+.cart-title-line {
+    width: 8rem;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 999px;
+    margin-top: 1.6rem;
+}
+
+/* ── Layout principal con flex ── */
+.cart-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 4.8rem;
+}
+
+/* ── Lista de items ── */
+.cart-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/* ── Item individual ── */
+.cart-item {
+    display: flex;
+    gap: 3.2rem;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.3s;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 24px rgba(101, 22, 0, 0.08);
+}
+
+.cart-item__img-wrap {
+    width: 16rem;
+    height: 16rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    background-color: var(--bg);
+}
+
+.cart-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.cart-item:hover .cart-item__img {
+    transform: scale(1.05);
+}
+
+.cart-item__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.cart-item__category {
+    font-family: var(--secondary-Font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.cart-item__name {
+    font-family: var(--primary-Font);
+    font-size: 2.4rem;
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.cart-item__desc {
+    font-family: var(--secondary-Font);
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.cart-item__delete {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--border);
+    cursor: pointer;
+    padding: 0.4rem;
+    transition: color 0.3s;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.cart-item__delete:hover {
+    color: var(--primary);
+}
+
+.cart-item__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+/* ── Control cantidad ── */
+.qty-control {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.qty-btn {
+    background: none;
+    border: none;
+    padding: 1rem 1.8rem;
+    font-size: 2rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    font-family: var(--secondary-Font);
+    line-height: 1;
+}
+
+.qty-btn:hover {
+    color: var(--primary);
+    background-color: var(--border);
+}
+
+.qty-value {
+    padding: 1rem 2.4rem;
+    font-family: var(--secondary-Font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text);
+    min-width: 4rem;
+    text-align: center;
+}
+
+.cart-item__price {
+    font-family: var(--primary-Font);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* ── Seguir comprando ── */
+.cart-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: var(--secondary-Font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-decoration: none;
+    margin-top: 0.8rem;
+    transition: color 0.3s, gap 0.3s;
+}
+
+.cart-back:hover {
+    color: var(--primary);
+    gap: 1.4rem;
+}
+
+/* ── Resumen lateral ── */
+.cart-summary {
+    width: 40rem;
+    flex-shrink: 0;
+    position: sticky;
+    top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.summary-box {
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    border-left: 4px solid var(--primary);
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.summary-box__title {
+    font-family: var(--primary-Font);
+    font-size: 2.6rem;
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-row__label {
+    font-family: var(--secondary-Font);
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.summary-row__value {
+    font-family: var(--secondary-Font);
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.summary-row__value--muted {
+    font-style: italic;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--border);
+    margin-top: 0.8rem;
+}
+
+.summary-total__label {
+    font-family: var(--primary-Font);
+    font-size: 2.2rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.summary-total__value {
+    font-family: var(--primary-Font);
+    font-size: 3.4rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ── Botón checkout ── */
+.btn-checkout {
+    width: 100%;
+    cursor: pointer;
+    margin: 0.8rem 0 0;
+    border-radius: 0.8rem;
+}
+
+/* ── Badges ── */
+.summary-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: var(--bg);
+    border-radius: 0.6rem;
+    padding: 1.6rem;
+}
+
+.summary-badge {
+    font-family: var(--secondary-Font);
+    font-size: 1.3rem;
+    color: var(--text-muted);
+}
+
+/* ── Nota pago seguro ── */
+.payment-note {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 1.6rem 2rem;
+    background-color: var(--surface);
+}
+
+.payment-note__icons {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.payment-note__text {
+    font-family: var(--secondary-Font);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: var(--text-muted);
+}
