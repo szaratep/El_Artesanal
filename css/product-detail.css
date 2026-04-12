@@ -309,3 +309,123 @@
     color: var(--text);
     line-height: 1.5;
 }
+
+@media (max-width: 1024px) {
+    .product-hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 3.2rem;
+        padding: 0 2.4rem;
+        margin: 4.8rem auto;
+    }
+
+    .product-info__title {
+        font-size: 3.2rem;
+    }
+
+    .specs {
+        padding: 0 2.4rem;
+        padding-top: 4.8rem;
+        margin: 4.8rem auto;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .spec-card--wide {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 820px) {
+    .product-hero {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: 2.4rem;
+        margin: 3.2rem auto;
+        padding: 0 2rem;
+    }
+
+    .product-info {
+        position: static;
+    }
+
+    .gallery__main {
+        aspect-ratio: 4 / 3;
+    }
+
+    .gallery__thumbs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .breadcrumb {
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+
+    .specs {
+        padding: 0 2rem;
+        padding-top: 3.2rem;
+        margin: 3.2rem auto;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qty-price-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-hero {
+        padding: 0 1.6rem;
+        margin: 2.4rem auto;
+    }
+
+    .product-info__title {
+        font-size: 2.8rem;
+    }
+
+    .product-info__desc {
+        font-size: 1.4rem;
+    }
+
+    .gallery__thumbs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .qty-price-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+
+    .price-wrapper {
+        text-align: left;
+    }
+
+    .price-wrapper__value {
+        font-size: 3.2rem;
+    }
+
+    .config-panel {
+        padding: 2rem;
+    }
+
+    .specs {
+        padding: 0 1.6rem;
+        padding-top: 2.4rem;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-card {
+        padding: 2rem;
+    }
+}
