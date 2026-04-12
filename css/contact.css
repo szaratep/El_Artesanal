@@ -1,6 +1,6 @@
 @import 'styles.css';
 
-main{
+main {
     background-color: var(--surface);
 }
 
@@ -31,7 +31,10 @@ main{
     gap: 3.2rem;
 }
 
-.address_section, .phone_number_section, .email_section, .schedule_section {
+.address_section,
+.phone_number_section,
+.email_section,
+.schedule_section {
     display: grid;
     grid-template-columns: 4rem 1fr;
     grid-template-rows: auto auto;
@@ -51,7 +54,8 @@ main{
     width: 2.8rem;
 }
 
-.subtitle_sections, .title_ubication {
+.subtitle_sections,
+.title_ubication {
     font-family: var(--secondary-Font);
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -108,7 +112,8 @@ main{
     margin-top: 2rem;
 }
 
-.input, .text_area {
+.input,
+.text_area {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -122,11 +127,13 @@ main{
     resize: none;
 }
 
-.input::placeholder, .text_area::placeholder {
+.input::placeholder,
+.text_area::placeholder {
     color: var(--secondary);
 }
 
-.input:focus, .text_area:focus {
+.input:focus,
+.text_area:focus {
     border-color: var(--primary);
 }
 
@@ -140,28 +147,28 @@ main{
     width: 50%;
 }
 
-.btn_send > a{
+.btn_send>a {
     font-family: var(--secondary-Font);
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.maps{
+.maps {
     width: 85%;
     margin: 60px auto;
     position: relative;
 }
 
-.container_maps{
+.container_maps {
     height: 600px;
 }
 
-.google_maps{
+.google_maps {
     width: 100%;
     height: 100%;
 }
 
-.info_maps{
+.info_maps {
     width: 320px;
     padding: 24px;
     background-color: var(--bg);
@@ -170,12 +177,95 @@ main{
     right: 20px;
 }
 
-.title_maps{
+.title_maps {
     font-size: 2rem;
 }
 
-.description_maps{
+.description_maps {
     font-size: 1.6rem;
     font-family: var(--secondary-Font);
     color: var(--secondary);
+}
+
+@media (max-width: 1024px) {
+    .title_primary {
+        font-size: 5.6rem;
+        padding: 4.8rem 4rem 3.2rem;
+    }
+
+    .container_info {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 4rem 4.8rem;
+        gap: 2.4rem;
+    }
+
+    .maps {
+        width: 92%;
+    }
+}
+
+@media (max-width: 820px) {
+    .title_primary {
+        font-size: 4.4rem;
+        padding: 3.2rem 2rem 2.4rem;
+    }
+
+    .container_info {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 3.2rem;
+    }
+
+    .btn_send {
+        width: 100%;
+        margin: 2.4rem auto;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .btn_send>a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info_maps {
+        display: none;
+    }
+
+    .container_maps {
+        height: 380px;
+    }
+
+    .maps {
+        width: 100%;
+        margin: 3.2rem auto;
+    }
+
+    .slogan p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title_primary {
+        font-size: 3.2rem;
+        padding: 2.4rem 1.6rem 1.6rem;
+    }
+
+    .container_info {
+        padding: 0 1.6rem 2.4rem;
+    }
+
+    .container_form {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .btn_send {
+        margin: 2.4rem auto;
+        padding: 1.4rem 2rem;
+    }
+
+    .container_maps {
+        height: 260px;
+    }
 }
