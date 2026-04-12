@@ -1,10 +1,10 @@
 @import 'styles.css';
 
-main{
+main {
     margin: 96px 32px;
 }
 
-.container{
+.container {
     width: 60%;
     display: flex;
     margin: auto;
@@ -13,19 +13,19 @@ main{
     overflow: hidden;
 }
 
-.container_image{
+.container_image {
     width: 50%;
     overflow: hidden;
     position: relative;
 }
 
-.img_log_in{
+.img_log_in {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.info_img{
+.info_img {
     width: 100%;
     height: 100%;
     color: var(--on-primary);
@@ -39,46 +39,48 @@ main{
     padding: 4.8rem;
 }
 
-.title_img{
+.title_img {
     font-size: 5rem;
     color: var(--on-primary);
 }
 
-.slogan_img{
+.slogan_img {
     font-family: var(--secondary-Font);
     font-size: 1.6rem;
 }
 
-.container_info{
+.container_info {
     width: 50%;
     padding: 6.4rem;
     background-color: var(--surface);
 }
 
-.welcome{
+.welcome {
     color: var(--primary);
     font-size: 4.6rem;
 }
 
-.welcome_indications{
+.welcome_indications {
     color: var(--secondary);
     font-family: var(--secondary-Font);
     font-size: 2rem;
     margin-bottom: 60px;
 }
 
-.form > label, .cont_password > label{
+.form>label,
+.cont_password>label {
     color: var(--primary);
     font-size: 2rem;
     font-style: italic;
     margin: 10px 0;
 }
 
-.form > label, input{
+.form>label,
+input {
     display: block;
 }
 
-.intp{
+.intp {
     width: 100%;
     height: 48px;
     border: none;
@@ -87,18 +89,18 @@ main{
     background-color: var(--bg);
 }
 
-.intp::placeholder{
+.intp::placeholder {
     color: var(--secondary);
     font-family: var(--secondary-Font);
 }
 
-.cont_password{
+.cont_password {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lost_pas{
+.lost_pas {
     font-size: 1.2rem;
     font-family: var(--secondary-Font);
     text-transform: uppercase;
@@ -106,20 +108,20 @@ main{
     color: var(--secondary);
 }
 
-.stay_logged_container{
+.stay_logged_container {
     display: flex;
     align-items: center;
     margin: 10px 0;
     padding: 10px 0;
 }
 
-.stay_logged_check{
+.stay_logged_check {
     display: inline;
     width: 16px;
     height: 16px;
 }
 
-.stay_logged{
+.stay_logged {
     font-size: 1.2rem;
     font-family: var(--secondary-Font);
     text-transform: uppercase;
@@ -127,36 +129,110 @@ main{
     color: var(--secondary);
 }
 
-.button_start{
+.button_start {
     margin: 0;
     width: 100%;
 }
 
-.button_start > a{
+.button_start>a {
     font-family: var(--secondary-Font);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-.register_container{
+.register_container {
     margin-top: 48px;
     padding-top: 32px;
     text-align: center;
 }
 
-.question{
+.question {
     font-size: 1.7rem;
     color: var(--secondary);
     font-family: var(--secondary-Font);
     margin-bottom: 10px;
 }
 
-.create_acount{
+.create_acount {
     font-size: 1.7rem;
     color: var(--primary);
     font-family: var(--secondary-Font);
     text-underline-offset: 10px;
 }
 
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+}
 
+@media (max-width: 820px) {
+    .container_image {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+
+    .container_info {
+        width: 100%;
+        padding: 3.2rem 2.4rem;
+    }
+
+    .welcome {
+        font-size: 3.6rem;
+    }
+
+    .welcome_indications {
+        font-size: 1.6rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .button_start,
+    .button_create {
+        margin: 0;
+        width: 100%;
+    }
+
+    .row_two {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        margin: 4rem 1.6rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .container_info {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .welcome {
+        font-size: 3rem;
+    }
+
+    .welcome_indications {
+        font-size: 1.5rem;
+        margin-bottom: 2.4rem;
+    }
+
+    main {
+        margin: 2.4rem 0;
+    }
+}
