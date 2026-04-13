@@ -43,6 +43,8 @@
             </p>
         </section>
 
+        <button class="filter_menu button_pry" command="show-modal" commandfor="filter_dialog">Filtro</button>
+        
         <section class="products">
             <section class="filter">
                 <aside class="aside">
@@ -189,7 +191,43 @@
                     <span class="chevron_right">></span>
                 </div>
             </section>
+
         </section>
+
+        <dialog class="filter_responsive" id="filter_dialog">
+            <section class="filter">
+                    <form class="form" action="">
+                        <h3 class="material">Material</h3>
+                        <label for="mdf"><input id="mdf" type="radio" title=""> MDF</label>
+                        <label for="pino"><input id="pino" type="radio"> Pino</label>
+                        <label for="acrilico"><input id="acrilico" type="radio"> Acrilico</label>
+                        <label for="vinilo"><input id="vinilo" type="radio"> Vinilo</label>
+
+                        <h3 class="category">Categoria</h3>
+                        <label for="decoracion"><input id="decoracion" type="radio"> Hogar</label>
+                        <label for="toda_ocacion"><input id="toda_ocacion" type="radio"> Toda ocacion</label>
+                        <label for="dia_hombre"><input id="dia_hombre" type="radio"> Dia del hombre</label>
+                        <label for="dia_mujer"><input id="dia_mujer" type="radio"> Dia de la mujer</label>
+                        <label for="dia_madre"><input id="dia_madre" type="radio"> Dia de la madre</label>
+                        <label for="dia_padre"><input id="dia_padre" type="radio"> Dia del padre</label>
+                        <label for="15_a"><input id="15_a" type="radio"> 15 años</label>
+                        <label for="grado"><input id="grado" type="radio"> Grados</label>
+
+                        <h3 class="category">Producto</h3>
+                        <label for="bandeja"><input id="bandeja" type="radio"> Bandejas</label>
+                        <label for="portaR"><input id="portaR" type="radio"> Portaretratos</label>
+                        <label for="caja"><input id="caja" type="radio"> Cajas</label>
+                        <label for="portaC"><input id="portaC" type="radio"> Portacelulares</label>
+
+                        <h3>Precio</h3>
+                        <label for=""><input class="range" type="range"></label>
+                        <span class="price_range">
+                            <p>$0</p>
+                            <p>$5000+</p>
+                        </span>
+                    </form>
+            </section>
+        </dialog>
     </main>
 
     <footer>
@@ -254,6 +292,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let modal = document.getElementById('filter_dialog');
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.close()
+        })
+    </script>
 </body>
 
 </html>
