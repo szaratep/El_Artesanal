@@ -17,18 +17,36 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo"><a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png" alt="Logo el artesanal"></a></div>
+            <div class="logo">
+                <a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png"
+                        alt="Logo el artesanal"></a>
+            </div>
+
+            <button class="menu_btn" id="menuBtn">☰</button>
+
             <nav>
-                <ul class="list_menu">
+                <ul class="list_menu" id="list_menu">
                     <li class="list_item"><a href="./index.html" class="link_item">Inicio</a></li>
                     <li class="list_item"><a href="./products.html" class="link_item">Productos</a></li>
                     <li class="list_item"><a href="./customized.html" class="link_item">Personalizados</a></li>
                     <li class="list_item"><a href="./contact.html" class="link_item">Contacto</a></li>
+
+                    <div class="menu_icons">
+                        <a href="./cart.html" class="menu_icon_link">
+                            <img src="./../img/shopping-cart.svg" alt="Carrito"> Carrito
+                        </a>
+                        <a href="./log_in.html" class="menu_icon_link">
+                            <img src="./../img/user-circle.svg" alt="Mi cuenta"> Mi cuenta
+                        </a>
+                    </div>
                 </ul>
             </nav>
+
             <div class="icons">
-                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg" alt="Carrito de compras"></a></div>
-                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg" alt=""></a></div>
+                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg"
+                            alt="Carrito de compras"></a></div>
+                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg"
+                            alt=""></a></div>
             </div>
         </div>
     </header>
@@ -132,6 +150,7 @@
         </div>
     </footer>
 
+    <script src="./../js/script.js"></script>
 </body>
 
 </html>

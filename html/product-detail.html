@@ -8,26 +8,45 @@
     <link rel="stylesheet" href="./../css/product-detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap"
+        rel="stylesheet">
     <title>Reloj Topográfico Oak — El Artesanal</title>
 </head>
 
 <body>
-
     <header>
         <div class="header">
-            <div class="logo"><a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png" alt="Logo el artesanal"></a></div>
+            <div class="logo">
+                <a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png"
+                        alt="Logo el artesanal"></a>
+            </div>
+
+            <button class="menu_btn" id="menuBtn">☰</button>
+
             <nav>
-                <ul class="list_menu">
+                <ul class="list_menu" id="list_menu">
                     <li class="list_item"><a href="./index.html" class="link_item">Inicio</a></li>
                     <li class="list_item"><a href="./products.html" class="link_item">Productos</a></li>
                     <li class="list_item"><a href="./customized.html" class="link_item">Personalizados</a></li>
                     <li class="list_item"><a href="./contact.html" class="link_item">Contacto</a></li>
+
+                    <div class="menu_icons">
+                        <a href="./cart.html" class="menu_icon_link">
+                            <img src="./../img/shopping-cart.svg" alt="Carrito"> Carrito
+                        </a>
+                        <a href="./log_in.html" class="menu_icon_link">
+                            <img src="./../img/user-circle.svg" alt="Mi cuenta"> Mi cuenta
+                        </a>
+                    </div>
                 </ul>
             </nav>
+
             <div class="icons">
-                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg" alt="Carrito de compras"></a></div>
-                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg" alt=""></a></div>
+                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg"
+                            alt="Carrito de compras"></a></div>
+                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg"
+                            alt=""></a></div>
             </div>
         </div>
     </header>
@@ -46,11 +65,7 @@
 
             <div class="gallery">
                 <div class="gallery__main">
-                    <img
-                        class="gallery__main-img"
-                        src="./../img/CAJA 1010-4.jpeg"
-                        alt="Caja 10 * 10"
-                    >
+                    <img class="gallery__main-img" src="./../img/CAJA 1010-4.jpeg" alt="Caja 10 * 10">
                 </div>
                 <div class="gallery__thumbs">
                     <div class="gallery__thumb">
@@ -71,7 +86,8 @@
                     <span class="product-info__category">Cajas y Bandejas</span>
                     <h1 class="product-info__title">Caja 10 * 10</h1>
                     <p class="product-info__desc">
-                        Caja de 10 x 10 cm, perfecta para pequeños detalles, ideal para sorprender con un regalo delicado y especial.
+                        Caja de 10 x 10 cm, perfecta para pequeños detalles, ideal para sorprender con un regalo
+                        delicado y especial.
                     </p>
                 </div>
 
@@ -81,13 +97,8 @@
                         <label class="config-panel__label" for="inscripcion">
                             Texto de inscripción (máx. 30 caracteres)
                         </label>
-                        <input
-                            class="config-panel__input"
-                            type="text"
-                            id="inscripcion"
-                            maxlength="30"
-                            placeholder="Ej: Para mamá, con amor..."
-                        >
+                        <input class="config-panel__input" type="text" id="inscripcion" maxlength="30"
+                            placeholder="Ej: Para mamá, con amor...">
                     </div>
 
                     <div class="qty-price-row">
@@ -120,7 +131,8 @@
                 <div class="spec-card spec-card--wide">
                     <span class="spec-card__label">Materiales</span>
                     <p class="spec-card__value">
-                        Caja de 10 x 10 cm elaborada en madera tipo MDF de 2.5 mm, con diseño delineado y corte preciso, presentada en acabado natural para un estilo sencillo y elegante.
+                        Caja de 10 x 10 cm elaborada en madera tipo MDF de 2.5 mm, con diseño delineado y corte preciso,
+                        presentada en acabado natural para un estilo sencillo y elegante.
                     </p>
                 </div>
                 <div class="spec-card">
@@ -157,31 +169,39 @@
                 </div>
                 <div class="regulation">
                     <ul class="list_regulation">
-                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Políticas y privacidad</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y condiciones</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Políticas y
+                                privacidad</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y
+                                condiciones</a></li>
                         <li class="list_item_footer"><a class="link_item_footer" href="./shipping.html">Envíos</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas frecuentes</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas
+                                frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="contact">
                     <ul class="img_footer">
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0" class="link_item_footer_img">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-whatsapp.svg" alt="WhatsApp" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-facebook.svg" alt="Facebook" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-instagram.svg" alt="Instagram" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-tiktok.svg" alt="TikTok" class="contact_img_footer">
                             </a>
                         </li>
@@ -199,5 +219,7 @@
         </div>
     </footer>
 
+    <script src="./../js/script.js"></script>
 </body>
+
 </html>

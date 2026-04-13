@@ -9,25 +9,45 @@
     <link rel="stylesheet" href="./../css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap"
+        rel="stylesheet">
     <title>Crear Cuenta — El Artesanal</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <div class="logo"><a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png" alt="Logo el artesanal"></a></div>
+            <div class="logo">
+                <a href="./index.html"><img class="logo_img" src="./../img/logo_el_arte_sas.png"
+                        alt="Logo el artesanal"></a>
+            </div>
+
+            <button class="menu_btn" id="menuBtn">☰</button>
+
             <nav>
-                <ul class="list_menu">
+                <ul class="list_menu" id="list_menu">
                     <li class="list_item"><a href="./index.html" class="link_item">Inicio</a></li>
                     <li class="list_item"><a href="./products.html" class="link_item">Productos</a></li>
                     <li class="list_item"><a href="./customized.html" class="link_item">Personalizados</a></li>
                     <li class="list_item"><a href="./contact.html" class="link_item">Contacto</a></li>
+
+                    <div class="menu_icons">
+                        <a href="./cart.html" class="menu_icon_link">
+                            <img src="./../img/shopping-cart.svg" alt="Carrito"> Carrito
+                        </a>
+                        <a href="./log_in.html" class="menu_icon_link">
+                            <img src="./../img/user-circle.svg" alt="Mi cuenta"> Mi cuenta
+                        </a>
+                    </div>
                 </ul>
             </nav>
+
             <div class="icons">
-                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg" alt="Carrito de compras"></a></div>
-                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg" alt=""></a></div>
+                <div class="icon_car"><a href="./cart.html"><img class="img_car" src="./../img/shopping-cart.svg"
+                            alt="Carrito de compras"></a></div>
+                <div class="icon_user"><a href="./log_in.html"><img class="img_user" src="./../img/user-circle.svg"
+                            alt=""></a></div>
             </div>
         </div>
     </header>
@@ -39,7 +59,8 @@
                 <img class="img_log_in" src="./../img/log_in-Register.jpg" alt="Grabado láser artesanal">
                 <div class="info_img">
                     <h2 class="title_img">Precisión en cada trazo. Arte en cada grabado.</h2>
-                    <p class="slogan_img">Únete a una comunidad de diseñadores y creadores que valoran la calidez de los materiales naturales combinada con la precisión digital.</p>
+                    <p class="slogan_img">Únete a una comunidad de diseñadores y creadores que valoran la calidez de los
+                        materiales naturales combinada con la precisión digital.</p>
                 </div>
             </div>
 
@@ -65,14 +86,16 @@
                         </div>
                         <div class="field_group">
                             <label class="label_inp" for="confirm_password">Confirmar</label>
-                            <input class="intp" type="password" id="confirm_password" name="ConfirmPassword" placeholder="••••••••">
+                            <input class="intp" type="password" id="confirm_password" name="ConfirmPassword"
+                                placeholder="••••••••">
                         </div>
                     </div>
 
                     <div class="stay_logged_container">
                         <input class="stay_logged_check" type="checkbox" id="terms">
                         <label class="stay_logged" for="terms">
-                            Acepto los <a class="link_terms" href="./terms.html">términos de servicio</a> y la política de privacidad.
+                            Acepto los <a class="link_terms" href="./terms.html">términos de servicio</a> y la política
+                            de privacidad.
                         </label>
                     </div>
 
@@ -98,31 +121,39 @@
                 </div>
                 <div class="regulation">
                     <ul class="list_regulation">
-                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Políticas y privacidad</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y condiciones</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./privacy.html">Políticas y
+                                privacidad</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./terms.html">Términos y
+                                condiciones</a></li>
                         <li class="list_item_footer"><a class="link_item_footer" href="./shipping.html">Envíos</a></li>
-                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas frecuentes</a></li>
+                        <li class="list_item_footer"><a class="link_item_footer" href="./faq.html">Preguntas
+                                frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="contact">
                     <ul class="img_footer">
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0" class="link_item_footer_img">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send/?phone=%2B573014139841&text&type=phone_number&app_absent=0"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-whatsapp.svg" alt="WhatsApp" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.facebook.com/ElartesanalDisenoyArte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-facebook.svg" alt="Facebook" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.instagram.com/elartesanaldisenoyarte/"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-instagram.svg" alt="Instagram" class="contact_img_footer">
                             </a>
                         </li>
                         <li class="list_item_footer_img">
-                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte" class="link_item_footer_img">
+                            <a target="_blank" href="https://www.tiktok.com/@elartesanaldisenoyarte"
+                                class="link_item_footer_img">
                                 <img src="./../img/brand-tiktok.svg" alt="TikTok" class="contact_img_footer">
                             </a>
                         </li>
@@ -140,5 +171,7 @@
         </div>
     </footer>
 
+    <script src="./../js/script.js"></script>
 </body>
+
 </html>
