@@ -113,7 +113,7 @@ body {
 
 .card {
   width: 400px;
-  height: 498px;
+  height: 520px;
   background-color: var(--surface);
   text-decoration: none;
   color: var(--text);
